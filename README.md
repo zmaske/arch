@@ -9,5 +9,5 @@
 2. wait a bit for pacman to sync
 3. yes | pacman -Sy git
 4. git clone https://github.com/YOU/arch
-5. python -m archinstall --config arch/arch.json
+5. archinstall --config arch/arch.json
 #### Done! - Take a break
