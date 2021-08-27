@@ -57,7 +57,6 @@ json = '''
         "chown -R {}:{} /home/{}/paru",
         "usermod -aG docker {}",
         "echo 'exec awesome' >> /home/{}/.xinitrc",
-        "echo 'startx' >> /home/{}/.zshrc",
         "sh zsh.sh {}"
     ],
     "filesystem": "ext4",
@@ -75,7 +74,7 @@ json = '''
         "NetworkManager": true
     }},
     "ntp": true,
-    "packages": ["docker", "git", "wget", "zsh", "vim", "neofetch", "htop", "openssh"],
+    "packages": ["docker", "git", "wget", "zsh", "vim", "neofetch", "htop", "openssh", "powerline", "powerline-fonts"],
     "profile": "{}",
     "services": ["docker"],
     "superusers": {{

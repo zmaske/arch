@@ -6,8 +6,7 @@
         "chown -R s:s /home/s/paru",
         "usermod -aG docker s",
         "echo 'exec awesome' >> /home/s/.xinitrc",
-        "sh zsh.sh s",
-	"echo 'startx' >> /home/s/.zshrc"
+        "sh zsh.sh s"
     ],
     "filesystem": "ext4",
     "gfx-driver": "VMware / VirtualBox (open-source)",
