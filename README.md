@@ -1,7 +1,7 @@
 # Archinstall
 ## Prequisites
 1. fork this repo
-2. configure   ! python 3.10 or higher required !
+2. configure | python >=3.10
 - Example: python archjson.py g o h arch k us d wm u s p arch s en_US.utf-8 t Europe/Zurich
 3. push to your repo
 ## Installation
