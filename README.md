@@ -11,3 +11,6 @@
 4. git clone https://github.com/YOU/arch
 5. archinstall --config arch/arch.json
 #### Done! - Take a break
+## Troubleshooting
+- make sure you have spelled everything correctly
+- if you tried to run the script once, run 'umount -R /mnt' then you can try again
