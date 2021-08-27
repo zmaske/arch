@@ -6,29 +6,30 @@
         "chown -R s:s /home/s/paru",
         "usermod -aG docker s",
         "echo 'exec awesome' >> /home/s/.xinitrc",
-        "sh zsh.sh s"
+		"git clone https://github.com/zmaske/arch ~/arch",
+        "sh ~/arch/zsh.sh s"
     ],
     "filesystem": "ext4",
-    "gfx-driver": "VMware / VirtualBox (open-source)",
+    "gfx-driver": "All open-source (default)",
     "harddrive": {
         "path": "/dev/sda"
     },
-    "hostname": "arch",
+    "hostname": "six",
     "kernels": [
         "linux-zen"
     ],
-    "keyboard-language": "us",
+    "keyboard_language": "us",
 	"mirror-region": "Worldwide",
     "nic": {
         "NetworkManager": true
     },
     "ntp": true,
-    "packages": ["docker", "git", "wget", "zsh", "vim", "neofetch", "htop", "openssh"],
-    "profile": "budgie",
+    "packages": ["docker", "git", "wget", "zsh", "vim", "neofetch", "htop", "openssh", "powerline", "powerline-fonts"],
+    "profile": "awesome",
     "services": ["docker"],
     "superusers": {
         "s": {
-            "!password": "arch"
+            "!password": "licht"
         }
     },
     "sys-encoding": "en_US",

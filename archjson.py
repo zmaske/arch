@@ -20,12 +20,6 @@ for option in options:
 			if keyboard_language == "":
 				print("choose keyboard_language eg: us")
 				exit()
-		case ["d", desktop]:
-			if desktop == "wm": desktop = "awesome";
-			elif desktop == "de": desktop = "budgie";
-			else:
-				print("choose desktop: wm, de")
-				exit()
 		case ["u", username]:
 			if username == "":
 				print("choose username")
@@ -46,8 +40,8 @@ for option in options:
 		case _:
 			print("'python archjson.py g o h arch k us d wm u s p arch s en_US.utf-8 t Europe/Zurich'")
 			exit()
-
-print(gfx_driver,hostname,keyboard_language,desktop,username,passwd,sys_encoding,sys_language,timezone)
+#print configuration
+print("\n{}".join(["\t--- configuration ---",gfx_driver.replace("(default)",""),hostname,keyboard_language,username,passwd,sys_encoding,sys_language,timezone]).format("gfx-driver\t\t","hostname\t\t","keyboard_language\t","username\t\t","password\t\t","sys-encoding\t\t","sys-language\t\t","timezone\t\t"))
 json = '''
 {{
     "audio": "pipewire",
@@ -57,7 +51,8 @@ json = '''
         "chown -R {}:{} /home/{}/paru",
         "usermod -aG docker {}",
         "echo 'exec awesome' >> /home/{}/.xinitrc",
-        "sh zsh.sh {}"
+		"git clone https://github.com/zmaske/arch ~/arch",
+        "sh ~/arch/zsh.sh {}"
     ],
     "filesystem": "ext4",
     "gfx-driver": "{}",
@@ -75,7 +70,7 @@ json = '''
     }},
     "ntp": true,
     "packages": ["docker", "git", "wget", "zsh", "vim", "neofetch", "htop", "openssh", "powerline", "powerline-fonts"],
-    "profile": "{}",
+    "profile": "awesome",
     "services": ["docker"],
     "superusers": {{
         "{}": {{
@@ -87,8 +82,8 @@ json = '''
     "timezone": "{}",
     "users": {{}}
 }}
-'''.format(username,username,username,username,username,username,username,username,\
-	gfx_driver,hostname,keyboard_language,desktop,username,passwd,sys_encoding,sys_language,timezone)
+'''.format(username,username,username,username,username,username,username,\
+	gfx_driver,hostname,keyboard_language,username,passwd,sys_encoding,sys_language,timezone)
 
 archjson = open("arch.json", "w", newline='')
 archjson.write(json[1:-1])
