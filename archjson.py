@@ -71,7 +71,6 @@ json = '''
         "linux-zen"
     ],
     "keyboard_language": "{}",
-    "mirror-region": "auto detect best mirror",
     "nic": {{
         "NetworkManager": true
     }},
