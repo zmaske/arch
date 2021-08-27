@@ -10,7 +10,7 @@
         "sh zsh.sh s"
     ],
     "filesystem": "ext4",
-    "gfx_driver": "VMware / VirtualBox (open-source)",
+    "gfx-driver": "VMware / VirtualBox (open-source)",
     "harddrive": {
         "path": "/dev/sda"
     },
@@ -18,7 +18,7 @@
     "kernels": [
         "linux-zen"
     ],
-    "keyboard_language": "us",
+    "keyboard-language": "us",
 	"mirror-region": "Worldwide",
     "nic": {
         "NetworkManager": true
@@ -32,8 +32,8 @@
             "!password": "arch"
         }
     },
-    "sys_encoding": "en_US",
-    "sys_language": "utf-8",
+    "sys-encoding": "en_US",
+    "sys-language": "utf-8",
     "timezone": "Europe/Zurich",
     "users": {}
 }

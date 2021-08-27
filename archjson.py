@@ -61,7 +61,7 @@ json = '''
         "sh zsh.sh {}"
     ],
     "filesystem": "ext4",
-    "gfx_driver": "{}",
+    "gfx-driver": "{}",
     "harddrive": {{
         "path": "/dev/sda"
     }},
@@ -83,8 +83,8 @@ json = '''
             "!password": "{}"
         }}
     }},
-    "sys_encoding": "{}",
-    "sys_language": "{}",
+    "sys-encoding": "{}",
+    "sys-language": "{}",
     "timezone": "{}",
     "users": {{}}
 }}
