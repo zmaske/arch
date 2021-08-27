@@ -57,11 +57,11 @@ json = '''
         "cd /home/{}; git clone https://aur.archlinux.org/paru.git",
         "chown -R {}:{} /home/{}/paru",
         "usermod -aG docker {}",
-		"echo 'exec awesome' >> /home/{}/.xinitrc",
-		"git clone --depth=1 https://github.com/romkatv/powerlevel10k.git /home/{}/powerlevel10k",
-		"echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> /home/{}/.zshrc
-		"echo -e \"yes\\nsed -i 's/robbyrussell/agnoster/g' /home/{}/.zshrc\" | sh -c \"$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"
-		"echo 'startx' >> /home/{}/.zshrc"
+        "echo 'exec awesome' >> /home/{}/.xinitrc",
+        "git clone --depth=1 https://github.com/romkatv/powerlevel10k.git /home/{}/powerlevel10k",
+        "echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> /home/{}/.zshrc
+        "echo -e \"yes\\nsed -i 's/robbyrussell/agnoster/g' /home/{}/.zshrc\" | sh -c \"$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"
+        "echo 'startx' >> /home/{}/.zshrc"
     ],
     "filesystem": "ext4",
     "gfx_driver": "{}",

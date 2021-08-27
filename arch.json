@@ -5,11 +5,11 @@
         "cd /home/s; git clone https://aur.archlinux.org/paru.git",
         "chown -R s:s /home/s/paru",
         "usermod -aG docker s",
-		"echo 'exec awesome' >> /home/s/.xinitrc",
-		"git clone --depth=1 https://github.com/romkatv/powerlevel10k.git /home/s/powerlevel10k",
-		"echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> /home/s/.zshrc
-		"echo -e "yes\nsed -i 's/robbyrussell/agnoster/g' /home/s/.zshrc" | sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-		"echo 'startx' >> /home/s/.zshrc"
+        "echo 'exec awesome' >> /home/s/.xinitrc",
+        "git clone --depth=1 https://github.com/romkatv/powerlevel10k.git /home/s/powerlevel10k",
+        "echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> /home/s/.zshrc
+        "echo -e "yes\nsed -i 's/robbyrussell/agnoster/g' /home/s/.zshrc" | sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+        "echo 'startx' >> /home/s/.zshrc"
     ],
     "filesystem": "ext4",
     "gfx_driver": "VMware / VirtualBox (open-source)",
