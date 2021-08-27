@@ -5,13 +5,12 @@ options = [[args[i],args[i+1]] for i in range(1,len(args),2)]
 for option in options:
 	match option:
 		case ["g", gfx]:
-			if gfx == "v": gfx_driver = "VMware / VirtualBox (open-source)";
-			elif gfx == "n": gfx_driver = "Nvidia";
+			if gfx == "n": gfx_driver = "Nvidia";
 			elif gfx == "i": gfx_driver = "Intel (open-source)";
 			elif gfx == "a": gfx_driver = "AMD / ATI (open-source)"; 
 			elif gfx == "o": gfx_driver = "All open-source (default)";
 			else:
-				print("choose graphics: v[irtual], n[vidia], a[md], o[pensource]")
+				print("choose graphics: n[vidia], a[md], o[pen-source = most compatible]")
 				exit()
 		case ["h", hostname]:
 			if hostname == "":
@@ -71,6 +70,7 @@ json = '''
         "linux-zen"
     ],
     "keyboard_language": "{}",
+	"mirror-region": "Worldwide",
     "nic": {{
         "NetworkManager": true
     }},

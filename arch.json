@@ -19,6 +19,7 @@
         "linux-zen"
     ],
     "keyboard_language": "us",
+	"mirror-region": "Worldwide",
     "nic": {
         "NetworkManager": true
     },
